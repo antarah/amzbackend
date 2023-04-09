@@ -33,7 +33,11 @@ const corsOpts = {
   };
   
   app.use(cors(corsOpts));
-  app.use(cors());
+  app.use(cors({
+		origin: 'https://steady-narwhal-cd8fb2.netlify.app',
+		credentials: true
+	  }
+  ));
   app.use(cookieParser(""));
   app.use(router);
 
