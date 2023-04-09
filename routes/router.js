@@ -12,7 +12,7 @@ console.log(BASE_URL)
 
 // get the products data
 
-router.get("https://amazonwebbackend.onrender.com/getproducts", async (req, res) => {
+router.get("https://back-9a3q.onrender.com/getproducts", async (req, res) => {
     try {
         const productsdata = await products.find();
         console.log(productsdata +  "data is fetched here");
