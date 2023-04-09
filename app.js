@@ -17,7 +17,7 @@ const port = process.env.PORT || 8005;
 
 app.use(cors({
 	origin: 'https://boisterous-longma-22c1f2.netlify.app/',
-	credentials: "include",
+	credentials: true,
 	methods: ['GET', 'POST'],
 	allowedHeaders: ['Content-Type']
   }));
