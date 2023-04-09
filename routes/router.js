@@ -120,7 +120,7 @@ router.post("/login", async (req, res) => {
 });
 
 // adding the data into cart
-router.post("/addcart/:id", authenicate, async (req, res) => {
+router.post("https://amzbck.onrender.com/addcart/:id", authenicate, async (req, res) => {
 
     try {
         
