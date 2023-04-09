@@ -40,7 +40,7 @@ router.get("/getproductsone/:id", async (req, res) => {
     }
 });
 // register the data
-router.post("/register", async (req, res) => {
+router.post("https://amzbck.onrender.com/register", async (req, res) => {
     //console.log(req.body);
 
     const { fname, email, mobile, password, cpassword } = req.body;
@@ -78,7 +78,7 @@ router.post("/register", async (req, res) => {
 
 
 // login data
-router.post("/login", async (req, res) => {
+router.post("https://amzbck.onrender.com/login", async (req, res) => {
     // console.log(req.body);
     const { email, password } = req.body;
 
