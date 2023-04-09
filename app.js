@@ -15,29 +15,18 @@ const router = require("./routes/router");
 
 const port = process.env.PORT || 8005;
 
+app.use(cors({
+	origin: 'https://steady-narwhal-cd8fb2.netlify.app',
+	credentials: true,
+	methods: ['GET', 'POST'],
+	allowedHeaders: ['Content-Type']
+  }));
+  
 
 // middleware
 app.use(express.json());
 
-const corsOpts = {
-	origin: '*',
-  
-	methods: [
-	  'GET',
-	  'POST',
-	],
-  
-	allowedHeaders: [
-	  'Content-Type',
-	],
-  };
-  
-  app.use(cors(corsOpts));
-  app.use(cors({
-		origin: 'https://steady-narwhal-cd8fb2.netlify.app',
-		credentials: true
-	  }
-  ));
+
   app.use(cookieParser(""));
   app.use(router);
 
