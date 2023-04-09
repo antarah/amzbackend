@@ -16,7 +16,7 @@ const router = require("./routes/router");
 const port = process.env.PORT || 8005;
 
 app.use(cors({
-	origin: 'https://steady-narwhal-cd8fb2.netlify.app',
+	origin: 'https://celebrated-entremet-86ef41.netlify.app',
 	credentials: true,
 	methods: ['GET', 'POST'],
 	allowedHeaders: ['Content-Type']
