@@ -16,8 +16,8 @@ const router = require("./routes/router");
 const port = process.env.PORT || 8005;
 
 app.use(cors({
-	origin: 'https://celebrated-entremet-86ef41.netlify.app',
-	credentials: true,
+	origin: 'https://boisterous-longma-22c1f2.netlify.app/',
+	credentials: "include",
 	methods: ['GET', 'POST'],
 	allowedHeaders: ['Content-Type']
   }));
