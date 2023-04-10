@@ -78,7 +78,7 @@ router.post("https://amzbck.onrender.com/register", async (req, res) => {
 
 
 // login data
-router.post("https://amzbck.onrender.com/login", async (req, res) => {
+router.post("/login", async (req, res) => {
     // console.log(req.body);
     const { email, password } = req.body;
 
