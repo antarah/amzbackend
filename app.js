@@ -16,7 +16,7 @@ const router = require("./routes/router");
 const port = process.env.PORT || 8005;
 
 app.use(cors({
-	origin: 'https://boisterous-longma-22c1f2.netlify.app/',
+	origin: 'https://venerable-sunflower-3af88c.netlify.app',
 	credentials: true,
 	methods: ['GET', 'POST'],
 	allowedHeaders: ['Content-Type']
